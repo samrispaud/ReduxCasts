@@ -8,9 +8,11 @@ export function selectBook(book) {
 }
 
 export function changePercentRead(book, changeVal) {
+  console.log('********************************');
+  console.log('Before change, action creator');
   console.log(book, changeVal);
   book.percentRead += changeVal
-  book.title += "*"
+  console.log('After change, action creator', book);
   // selectBook is an ActionCreator, it needs to return an action,
   // an object with a type property.
   return {

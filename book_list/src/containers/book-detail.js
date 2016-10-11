@@ -6,7 +6,6 @@ import { bindActionCreators } from 'redux';
 
 class BookDetail extends Component {
   render() {
-    debugger
 
     console.log('BookDetail render: ', this.props);
 
@@ -44,8 +43,7 @@ class BookDetail extends Component {
 }
 
 function mapStateToProps(state) {
-  debugger
-  console.log('mapStateToProps in BookDetail');
+  console.log('mapStateToProps in BookDetail', state);
   return {
     book: state.activeBook
   };
